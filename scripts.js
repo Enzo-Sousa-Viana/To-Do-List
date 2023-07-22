@@ -26,9 +26,9 @@ function showtasks() {
         newLi = newLi + `
 
         <li class="task ${task.completed ? "done" : ""}">
-            <img src="./img/checked.png" alt="check-on-task" onclick="completetask(${index})">
+            <img src="./checked.png" alt="check-on-task" onclick="completetask(${index})">
             <p>${task.task}</p>
-            <img src="./IMG/trash.png" alt="task-on-trash" onclick="deleteItem(${index})">
+            <img src="./trash.png" alt="task-on-trash" onclick="deleteItem(${index})">
         </li> 
 
         `
@@ -69,10 +69,10 @@ function reloadScreen() {
 
 
 function newtask() {
-    const taskValue = input.value.trim(); // Remover espaços em branco no início e no fim
+    const taskValue = input.value.trim(); 
 
     if (taskValue === "") {
-        // Ignorar adição se o campo estiver vazio
+        
         return;
     }
 
